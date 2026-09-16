@@ -1,14 +1,13 @@
 package io.github.pinkavocadodev.paalm.utility
 
-import androidx.compose.remote.creation.compose.state.round
 import io.github.pinkavocadodev.paalm.R
 import io.github.pinkavocadodev.paalm.dataclass.Day
 import io.github.pinkavocadodev.paalm.dataclass.Response
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.util.Locale
-import kotlin.math.roundToInt
 import kotlin.math.round
+import kotlin.math.roundToInt
 
 fun genDays(response: Response): List<Day> {
     val listOfDays = mutableListOf<Day>()
