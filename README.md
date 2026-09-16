@@ -1,5 +1,5 @@
 
-![](![didascalia di immagine](app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp))
+![](app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp)
 
 # Posso andare al mare?
 Posso andare al mare? (Paalm) è un'applicazione Android minimalista e open source pensata per chi vuole sapere subito se la giornata è adatta per andare in spiaggia, senza perdersi in previsioni meteo complesse.
