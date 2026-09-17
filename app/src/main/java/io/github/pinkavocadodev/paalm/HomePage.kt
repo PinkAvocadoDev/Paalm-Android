@@ -1,6 +1,7 @@
 package io.github.pinkavocadodev.paalm
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -22,6 +23,8 @@ import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.CardElevation
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.Icon
@@ -34,6 +37,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.unit.dp
@@ -173,12 +177,15 @@ fun HomePage(modifier: Modifier = Modifier){
             Text(season.value.label, color = Color.Black)
         }
         Spacer(Modifier.size(5.dp))
-        LazyColumn() {
+        LazyColumn(
+            modifier = Modifier.fillMaxSize()
+        ) {
             items(
                 items = listOfDays,
                 itemContent = { day ->
                     Card(
-                        modifier = Modifier.fillMaxWidth().height(70.dp).padding(horizontal = 10.dp, vertical = 5.dp)
+                        modifier = Modifier.fillMaxWidth().height(70.dp).padding(horizontal = 10.dp, vertical = 5.dp),
+                        elevation = CardDefaults.cardElevation(defaultElevation = 2.dp)
                     ) {
                         Row(
                             modifier = Modifier.background(colorResource(day.weatherClr)).fillMaxWidth().padding(10.dp),
@@ -190,6 +197,7 @@ fun HomePage(modifier: Modifier = Modifier){
                                 Text(day.day, fontSize = 12.sp, color = Color.Black)
                                 Spacer(Modifier.size(10.dp))
                                 Button(
+                                    elevation = ButtonDefaults.buttonElevation(2.dp),
                                     onClick = {
                                         showDialog.value = true
                                         dialogDay.value = day

@@ -7,6 +7,10 @@ L'app analizza e interpreta i dati meteo essenziali (temperatura, precipitazioni
 
 Disponibile gratuitamente tramite GitHub e NeoStore, Paalm rispetta totalmente la privacy degli utenti: non traccia le attività online, non raccoglie dati personali ed è completamente priva di pubblicità.
 
+<a href="https://github.com/PinkAvocadoDev/Paalm-Android/releases">
+  <img src="https://raw.githubusercontent.com/rubenpgrady/get-it-on-github/refs/heads/main/get-it-on-github.png" alt="Get it on GitHub" height="96" />
+</a>
+
 ## Tecnologie utilizzate
 - Retrofit
 - Kotlin
