@@ -85,7 +85,7 @@ fun AboutPage(modifier: Modifier= Modifier){
                     onClick =  { uriHandler.openUri("https://pinkavocadodev.github.io/")},
                     modifier = Modifier.fillMaxWidth()
                 ){
-                    Text(text = "Github: PinkAvocadoDev", color = Color.Black)
+                    Text(text = "Github: PinkAvocadoDev")
                 }
             HorizontalDivider(Modifier.padding(10.dp))
             Text("© $date Andrea Di Stefano, tutti i diritti riservati.", color = Color.Black)
