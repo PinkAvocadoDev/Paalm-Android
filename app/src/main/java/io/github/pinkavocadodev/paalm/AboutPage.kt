@@ -43,7 +43,7 @@ fun AboutPage(modifier: Modifier= Modifier){
     ) {
         Column(Modifier.padding(25.dp)) {
             Text("Che cos'è Posso andare al mare?", fontSize=25.sp, fontWeight = FontWeight(1000), color = Color.Black)
-            Text("Paalm? è una web app che si pone lo scopo di rispondere in maniera coincisa e minimalista alla semplice domanda \"Si può andare al mare oggi?\".\n" +
+            Text("Paalm? è un'app che si pone lo scopo di rispondere in maniera coincisa e minimalista alla semplice domanda \"Si può andare al mare oggi?\".\n" +
                     "\n" +
                     "Conosciamo personalmente quanto sia problematico preparare una giornata di mare, soprattutto se si abita in zone lontane dalla costa, perciò abbiamo deciso di creare Paalm?, un servizio in grado di interpretare dati meteo e di restituire un giudizio coinciso e accurato riguardo la qualità della giornata di mare.\n" +
                     "\n" +
@@ -89,6 +89,7 @@ fun AboutPage(modifier: Modifier= Modifier){
                 }
             HorizontalDivider(Modifier.padding(10.dp))
             Text("© $date Andrea Di Stefano, tutti i diritti riservati.", color = Color.Black)
+            Text("Ver. 1.0.1", color = Color.Black, fontSize = 10.sp)
         }
     }
 }
